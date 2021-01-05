@@ -1,9 +1,16 @@
+// IMPORT COMPONENTS ----------------//
+import Hero from "@/components/Hero"
+import Projects from "@/components/Projects"
+import Technologies from "@/components/Technologies"
+import Contact from "@/components/Contact"
+
 export default function Home() {
   return (
     <>
-      <div className="flex justify-center items-center h-screen bg-blue-800">
-        <h1 className="text-6xl font-bold text-white">Ready to get started !</h1>
-      </div>
+      <Hero />
+      {/* <Projects />
+      <Technologies />
+      <Contact /> */}
     </>
   )
 }
