@@ -23,7 +23,7 @@ export default function Hero() {
           <p className="text-5xl font-black">Mathis Barré</p>
           <p className="text-3xl mb-2 tracking-widest">Développeur web</p>
           <div className="flex flex-col sm:flex-row">
-            <button className="text-lg bg-primary rounded py-0.5 px-4 mb-2 sm:mb-0 sm:mr-2 sm:w-44">Voir mes projets</button>
+            <button className="text-lg bg-primary-100 rounded py-0.5 px-4 mb-2 sm:mb-0 sm:mr-2 sm:w-44">Voir mes projets</button>
             <button className="text-lg border border-white bg-black bg-opacity-30 rounded py-0.5 px-4 sm:w-44">Me contacter</button>
           </div>
         </div>

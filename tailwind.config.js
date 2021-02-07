@@ -8,8 +8,9 @@ module.exports = {
         '144': '36rem'
       },
       colors: {
-        'primary': '#f50057',
-        'darkPrimary': '#cc1355'
+        'primary-100': '#f50057',
+        'primary-200': '#cc1355',
+        'primary-800': '#581a28',
       },
       backgroundImage: theme => ({
         'hero': "url('/images/john-towner-JgOeRuGD_Y4-unsplash.jpg')",
