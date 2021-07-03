@@ -4,8 +4,18 @@ export default function Home() {
   return (
     <>
       <Head>
+        {/* METADATA */}
         <title>Mathis Barré, web developer</title>
-        <meta name="description" content="I am a french guy who mainly does front-end web development." />
+        <meta name="description" content="French guy who mainly does front-end web development." />
+
+        {/* FAVICON */}
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
       </Head>
       <main className="container max-w-3xl px-6 py-16 mx-auto">
         <h1 className="text-4xl font-bold">Hey, I'm Mathis Barré 👋</h1>
