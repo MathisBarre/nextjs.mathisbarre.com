@@ -6,7 +6,7 @@ import Credit from "@/components/Credit"
 
 export default function Hero() {
   return (
-    <header className="flex items-center justify-center bg-gray-900 h-192 sm:h-144 bg-hero bg-cover bg-center relative">
+    <header className="flex items-center justify-center bg-gray-900 h-96 bg-hero bg-cover bg-center relative">
       <div className="hidden sm:flex sm:items-center ">
         <Image
           className="hidden rounded-full"
@@ -28,7 +28,7 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <p className="absolute bottom-0 right-0 text-white text-opacity-20 p-2"><Credit/></p>
+      <p className="absolute bottom-0 right-0 text-white text-opacity-20 p-2"><Credit /></p>
     </header>
   )
 }

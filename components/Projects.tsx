@@ -1,10 +1,10 @@
 export default function Projects() {
   return (
-    <section className="max-w-5xl mx-auto px-2 box-border">
-      <div className="container mx-auto py-32">
-        <h2 className="text-3xl font-bold text-center mb-16">Mes derniers projet<span className="text-primary">.</span></h2>
-        <h3 className="text-xl mb-2 mt-8">En tant que freelance</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    <section className="box-border max-w-5xl px-2 mx-auto">
+      <div className="container py-24 mx-auto">
+        <h2 className="mb-16 text-3xl font-bold text-center">Mes derniers projet<span className="text-primary">.</span></h2>
+        <h3 className="mt-8 mb-2 text-xl">En tant que freelance</h3>
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           <Project
             img={{
               url: "./images/projects/arnodva.png",
@@ -16,7 +16,9 @@ export default function Projects() {
               url: "./images/projects/BeYou.png",
               alt: "beYou"
             }}
-            link="https://beyou-lgbt.fr" />
+            link="https://beyou-lgbt.fr"
+            big
+          />
           <Project
             img={{
               url: "./images/projects/isba.png",
@@ -24,8 +26,8 @@ export default function Projects() {
             }}
             link="https://isba-editions.com/" />
         </div>
-        <h3 className="text-xl mb-2 mt-8">Side projects</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <h3 className="mt-8 mb-2 text-xl">Side projects</h3>
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           <Project
             img={{
               url: "./images/projects/devs-coffee.png",
@@ -46,8 +48,8 @@ export default function Projects() {
             link="http://chatbox.mathisbarre.com/"
           />
         </div>
-        <h3 className="text-xl mb-2 mt-8">Projets d'étude</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <h3 className="mt-8 mb-2 text-xl">Projets d'étude</h3>
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           <Project
             img={{
               url: "./images/projects/orinoco.png",
@@ -78,11 +80,17 @@ interface IprojectProps {
     alt: string
   }
   link: string
+  big?: boolean
 }
 
-function Project({ img, link }: IprojectProps) {
+function Project({ img, link, big }: IprojectProps) {
   return (
-    <a target="_blank" rel="noopener noreferrer" href={link} className="cursor-pointer aspect-w-16 aspect-h-9 bg-primary-800 rounded transform hover:scale-105 hover:rotate-2 duration-200">
+    <a
+      target="_blank"
+      rel="noopener noreferrer"
+      href={link}
+      className="duration-200 transform rounded cursor-pointer aspect-w-16 aspect-h-9 bg-primary-800 hover:scale-105 hover:rotate-2"
+    >
       <img className="rounded" src={img.url} alt={img.alt} />
     </a>
   )
