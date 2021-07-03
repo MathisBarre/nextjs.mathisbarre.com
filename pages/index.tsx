@@ -41,16 +41,16 @@ export default function Home() {
       </p>
 
       <h2 className="mt-12 mb-2 text-3xl font-bold">I'm open to discussion</h2>
-      <form>
+      <form action="https://formspree.io/f/xeqvzpnz" method="POST">
         <div className="flex flex-col mb-2">
-          <label htmlFor="email" className="font-bold">Your email</label>
-          <input type="email" name="email" id="email" className="p-2 text-gray-900 rounded" />
+          <label htmlFor="_replyto" className="font-bold">Your email</label>
+          <input type="_replyto" name="_replyto" id="_replyto" className="p-2 text-gray-900 rounded" />
         </div>
         <div className="flex flex-col mb-4">
           <label htmlFor="message" className="font-bold">Your message</label>
-          <textarea name="message" id="message" className="p-2 text-gray-900 rounded"></textarea>
+          <textarea name="message" id="message" className="p-2 text-gray-900 rounded" rows={6}></textarea>
         </div>
-        <input type="submit" value="Send your love letter" className="block w-full p-2 bg-pink-700 rounded" />
+        <input type="submit" value="Send your love letter" className="block w-full p-2 bg-pink-700 rounded cursor-pointer hover:bg-pink-800" />
       </form>
     </main>
   )
