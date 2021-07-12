@@ -22,7 +22,7 @@ export default function Home() {
         <p className="text-gray-200">I'm glad to see you here ! Take a cup of coffee ☕ and make a tour !</p>
 
         <h2 className="mt-12 mb-2 text-3xl font-bold">Who am I ?</h2>
-        <p className="text-gray-200">I am a french guy who mainly does front-end web development. I also occasionally try to teach what I know by making videos on my <a className="text-pink-500 underline" href="https://www.youtube.com/channel/UCl3-1zqMl6YkRx0OQ3KwC_g">YouTube channel</a>. On the side, I'm currently trying to grow <a className="text-pink-500 underline" href="https://devs.coffee">devs.coffee</a> where I write some blog posts.</p>
+        <p className="text-gray-200">I am a french guy who mainly does front-end web development. I also occasionally try to teach what I know by making videos on my <a className="text-pink-500 animated-underline" href="https://www.youtube.com/channel/UCl3-1zqMl6YkRx0OQ3KwC_g">YouTube channel</a>. On the side, I'm currently trying to grow <a className="text-pink-500 animated-underline" href="https://devs.coffee">devs.coffee</a> where I write some blog posts.</p>
 
         <h2 className="mt-12 mb-2 text-3xl font-bold">The three projects I'm the most proud of.</h2>
         <a href="https://devs.coffee" target="_blank" rel="noreferrer noopener" className="block mb-2 group">
@@ -57,7 +57,14 @@ export default function Home() {
           I don't do mobile development for now but I plan to learn <span className="font-bold text-pink-500">React Native</span>, <span className="font-bold text-pink-500">Flutter</span> or <span className="font-bold text-pink-500">Ionic</span> with <span className="font-bold text-pink-500">Capacitor</span>.
         </p>
 
-        <h2 className="mt-12 mb-2 text-3xl font-bold">I'm open to discussion</h2>
+        <h2 className="mt-12 mb-2 text-3xl font-bold">
+          I'm open to discussion
+          <span className="relative inline-flex items-center p-1 ml-4 text-sm font-normal text-white text-green-400 transform -translate-y-1 border border-green-400 rounded">
+            <span className="inline-block w-2 h-2 ml-1 mr-2 bg-green-400 rounded-full animate-ping"></span>
+            <span className="absolute inline-block w-2 h-2 ml-1 mr-2 bg-green-400 rounded-full"></span>
+            Available for hire in <span className="ml-1 font-bold"> September 2021</span>
+          </span>
+        </h2>
         <form action="https://formspree.io/f/xeqvzpnz" method="POST">
           <div className="flex flex-col mb-2">
             <label htmlFor="_replyto" className="font-bold">Your email</label>
