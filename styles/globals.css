@@ -1,10 +1,7 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
   font-family: Inter, sans-serif;
-  background-color: #111827;
-  color: white;
+  @apply text-white bg-gray-900;
 }
 
 a {
@@ -14,4 +11,38 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+*::selection {
+  @apply text-white bg-[#ec4899];
+}
+
+.hand-animation {
+  display: inline-block;
+  animation-name: handAnimation;
+  animation-duration: 1s;
+  transform-origin: 20% 70%;
+  transform: translateY(0.25rem);
+}
+
+@keyframes handAnimation {
+  0% {
+    transform: rotate(0deg) translateY(0.25rem);
+  }
+
+  25% {
+    transform: rotate(20deg) scale(1.1) translateY(0.25rem);
+  }
+
+  50% {
+    transform: rotate(0deg) scale(1.1) translateY(0.25rem);
+  }
+
+  75% {
+    transform: rotate(20deg) scale(1.1) translateY(0.25rem);
+  }
+
+  100% {
+    transform: translate(0deg) translateY(0.25rem);
+  }
 }

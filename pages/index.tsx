@@ -18,7 +18,7 @@ export default function Home() {
         <meta name="theme-color" content="#ffffff" />
       </Head>
       <main className="container max-w-3xl px-6 py-16 mx-auto">
-        <h1 className="text-4xl font-bold">Hey, I'm Mathis Barré 👋</h1>
+        <h1 className="text-4xl font-bold">Hey, I'm Mathis Barré <img className="align-baseline h-9 hand-animation" src="/images/emoji/waving-hand-flip.png" alt="" /></h1>
         <p className="text-gray-200">I'm glad to see you here ! Take a cup of coffee ☕ and make a tour !</p>
 
         <h2 className="mt-12 mb-2 text-3xl font-bold">Who am I ?</h2>
