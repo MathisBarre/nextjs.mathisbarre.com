@@ -58,8 +58,8 @@ export default function Home() {
         </p>
 
         <h2 className="mt-12 mb-2 text-3xl font-bold">
-          I'm open to discussion
-          <span className="relative inline-flex items-center p-1 ml-4 text-sm font-normal text-white text-green-400 transform -translate-y-1 border border-green-400 rounded">
+          <span className="mr-4">Engage in a discussion</span>
+          <span className="relative inline-flex items-center p-1 text-sm font-normal text-white text-green-400 transform -translate-y-1 border border-green-400 rounded">
             <span className="inline-block w-2 h-2 ml-1 mr-2 bg-green-400 rounded-full animate-ping"></span>
             <span className="absolute inline-block w-2 h-2 ml-1 mr-2 bg-green-400 rounded-full"></span>
             Available for hire in <span className="ml-1 font-bold"> September 2021</span>
