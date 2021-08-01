@@ -17,34 +17,34 @@ export default function Home() {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
-      <main className="container max-w-3xl px-6 py-16 mx-auto">
-        <h1 className="text-4xl font-bold">Hey, I'm Mathis Barré <img className="align-baseline h-9 hand-animation" src="/images/emoji/waving-hand-flip.png" alt="" /></h1>
+      <main className="container max-w-3xl px-4 py-16 mx-auto sm:px-6">
+        <h1 className="text-2xl font-bold sm:text-4xl">Hey, I'm Mathis Barré <img className="align-baseline h-7 sm:h-9 hand-animation" src="/images/emoji/waving-hand-flip.png" alt="" /></h1>
         <p className="text-gray-200">I'm glad to see you here ! Take a cup of coffee ☕ and make a tour !</p>
 
-        <h2 className="mt-12 mb-2 text-3xl font-bold">Who am I ?</h2>
+        <h2 className="mt-12 mb-2 text-xl font-bold sm:text-3xl">Who am I ?</h2>
         <p className="text-gray-200">I am a french guy who mainly does front-end web development. I also occasionally try to teach what I know by making videos on my <a className="text-pink-500 animated-underline" href="https://www.youtube.com/channel/UCl3-1zqMl6YkRx0OQ3KwC_g">YouTube channel</a>. On the side, I'm currently trying to grow <a className="text-pink-500 animated-underline" href="https://devs.coffee">devs.coffee</a> where I write some blog posts.</p>
 
-        <h2 className="mt-12 mb-2 text-3xl font-bold">The three projects I'm the most proud of.</h2>
+        <h2 className="mt-12 mb-2 text-xl font-bold sm:text-3xl">The three projects I'm the most proud of.</h2>
         <a href="https://devs.coffee" target="_blank" rel="noreferrer noopener" className="block mb-2 group">
           <section className="p-4 duration-75 border border-gray-700 rounded group-hover:bg-gray-800">
-            <h3 className="mb-2 text-xl font-semibold">☕ devs.coffee</h3>
+            <h3 className="mb-2 text-xl font-semibold sm:text-3xl">☕ devs.coffee</h3>
             <p>A website that aim to support students in web development until they find a job.</p>
           </section>
         </a>
         <a href="https://arnodva.com" target="_blank" rel="noreferrer noopener" className="block mb-2 group">
           <section className="p-4 duration-75 border border-gray-700 rounded group-hover:bg-gray-800">
-            <h3 className="mb-2 text-xl font-semibold">🤖 Arnodva</h3>
+            <h3 className="mb-2 text-xl font-semibold sm:text-3xl">🤖 Arnodva</h3>
             <p>I migrated Wix website to a Next.js website with built-in internationnalization.</p>
           </section>
         </a>
         <a href="https://orinoco-v2.mathisbarre.com" target="_blank" rel="noreferrer noopener" className="block group">
           <section className="p-4 duration-75 border border-gray-700 rounded group-hover:bg-gray-800">
-            <h3 className="mb-2 text-xl font-semibold">🛒 Orinoco</h3>
+            <h3 className="mb-2 text-xl font-semibold sm:text-3xl">🛒 Orinoco</h3>
             <p>The MVP of an e-commerce website (school project).</p>
           </section>
         </a>
 
-        <h2 className="mt-12 mb-2 text-3xl font-bold">What are the technologies I'm good with ?</h2>
+        <h2 className="mt-12 mb-2 text-xl font-bold sm:text-3xl">What are the technologies I'm good with ?</h2>
         <p className="mb-2 text-gray-200">
           I do love working with <span className="font-bold text-pink-500">tailwindcss</span>, <span className="font-bold text-pink-500">React</span> and <span className="font-bold text-pink-500">Next.js</span> when I'm doing front-end web development. But I also learned <span className="font-bold text-pink-500">Vue.js</span> during my internship in Lion Coach. I do use <span className="font-bold text-pink-500">TypeScript</span> with long-term projects.
         </p>
@@ -57,9 +57,10 @@ export default function Home() {
           I don't do mobile development for now but I plan to learn <span className="font-bold text-pink-500">React Native</span>, <span className="font-bold text-pink-500">Flutter</span> or <span className="font-bold text-pink-500">Ionic</span> with <span className="font-bold text-pink-500">Capacitor</span>.
         </p>
 
-        <h2 className="mt-12 mb-2 text-3xl font-bold">
-          <span className="mr-4">Engage in a discussion</span>
-          <span className="relative inline-flex items-center p-1 text-sm font-normal text-white text-green-400 transform -translate-y-1 border border-green-400 rounded">
+        <h2 className="flex flex-col flex-wrap items-start mt-12 mb-2 text-xl font-bold md:items-center md:flex-row sm:text-3xl">
+          <span>Engage in a discussion</span>
+          <span className="block w-4 h-2"></span>
+          <span className="relative inline-flex items-center p-1 text-sm font-normal text-green-400 border border-green-400 rounded">
             <span className="inline-block w-2 h-2 ml-1 mr-2 bg-green-400 rounded-full animate-ping"></span>
             <span className="absolute inline-block w-2 h-2 ml-1 mr-2 bg-green-400 rounded-full"></span>
             Available for hire in <span className="ml-1 font-bold"> September 2021</span>
