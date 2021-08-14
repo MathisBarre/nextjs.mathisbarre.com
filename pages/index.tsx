@@ -27,19 +27,19 @@ export default function Home() {
         <h2 className="mt-12 mb-2 text-xl font-bold sm:text-3xl">The three projects I'm the most proud of.</h2>
         <a href="https://devs.coffee" target="_blank" rel="noreferrer noopener" className="block mb-2 group">
           <section className="p-4 duration-75 border border-gray-700 rounded group-hover:bg-gray-800">
-            <h3 className="mb-2 text-xl font-semibold sm:text-3xl">☕ devs.coffee</h3>
+            <h3 className="mb-2 text-lg font-semibold sm:text-xl">☕ devs.coffee</h3>
             <p>A website that aim to support students in web development until they find a job.</p>
           </section>
         </a>
         <a href="https://arnodva.com" target="_blank" rel="noreferrer noopener" className="block mb-2 group">
           <section className="p-4 duration-75 border border-gray-700 rounded group-hover:bg-gray-800">
-            <h3 className="mb-2 text-xl font-semibold sm:text-3xl">🤖 Arnodva</h3>
+            <h3 className="mb-2 text-lg font-semibold sm:text-xl">🤖 Arnodva</h3>
             <p>I migrated Wix website to a Next.js website with built-in internationnalization.</p>
           </section>
         </a>
         <a href="https://orinoco-v2.mathisbarre.com" target="_blank" rel="noreferrer noopener" className="block group">
           <section className="p-4 duration-75 border border-gray-700 rounded group-hover:bg-gray-800">
-            <h3 className="mb-2 text-xl font-semibold sm:text-3xl">🛒 Orinoco</h3>
+            <h3 className="mb-2 text-lg font-semibold sm:text-xl">🛒 Orinoco</h3>
             <p>The MVP of an e-commerce website (school project).</p>
           </section>
         </a>
