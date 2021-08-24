@@ -33,8 +33,7 @@ function Intro() {
   return (
     <section>
       <h1 className="text-2xl font-bold sm:text-4xl">
-        Hey, I'm Mathis Barré
-        <img className="align-baseline h-7 sm:h-9 hand-animation" src="/images/emoji/waving-hand-flip.png" alt="" />
+        Hey, I'm Mathis Barré <img className="align-baseline h-7 sm:h-9 hand-animation" src="/images/emoji/waving-hand-flip.png" alt="" />
       </h1>
       <p className="mb-2 text-gray-200">I'm glad to see you here ! Take a cup of coffee ☕ and make a tour !</p>
 
