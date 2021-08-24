@@ -36,7 +36,13 @@ function Intro() {
         Hey, I'm Mathis Barré
         <img className="align-baseline h-7 sm:h-9 hand-animation" src="/images/emoji/waving-hand-flip.png" alt="" />
       </h1>
-      <p className="text-gray-200">I'm glad to see you here ! Take a cup of coffee ☕ and make a tour !</p>
+      <p className="mb-2 text-gray-200">I'm glad to see you here ! Take a cup of coffee ☕ and make a tour !</p>
+
+      <section className="relative inline-flex items-center p-1 text-sm font-normal text-green-400 border border-green-400 rounded">
+        <span className="inline-block w-2 h-2 ml-1 mr-2 bg-green-400 rounded-full animate-ping"></span>
+        <span className="absolute inline-block w-2 h-2 ml-1 mr-2 bg-green-400 rounded-full"></span>
+        Available for hire in <span className="ml-1 font-bold"> September 2021</span>
+      </section>
 
       <h2 className="title-section">Who am I ?</h2>
       <p className="text-gray-200">
@@ -94,15 +100,15 @@ function Technologies() {
 function SocialNetworks() {
   return (
     <section>
-      <h2 className="title-section">Join me on</h2>
+      <h2 className="title-section">Join me !</h2>
 
       <div className="grid grid-cols-3 gap-2 sm:grid-cols-6">
-        <SocialNetwork link="https://github.com/MathisBarre" iconUrl="/images/icons/github.svg" color="#181717" />
-        <SocialNetwork link="https://linkedin.com/in/mathis-barre" iconUrl="/images/icons/linkedin.svg" color="#0A66C2" />
-        <SocialNetwork link="https://www.youtube.com/channel/UCl3-1zqMl6YkRx0OQ3KwC_g" iconUrl="/images/icons/youtube.svg" color="#FF0000" />
-        <SocialNetwork link="https://twitter.com/LeMathisBarre" iconUrl="/images/icons/twitter.svg" color="#1DA1F2" />
-        <SocialNetwork link="https://www.twitch.tv/mathisbarre_" iconUrl="/images/icons/twitch.svg" color="#9146FF" />
-        <SocialNetwork link="https://www.malt.fr/profile/mathisbarre" iconUrl="/images/icons/malt.svg" color="#ff5c57" />
+        <SocialNetwork link="https://github.com/MathisBarre" iconUrl="/images/icons/github.svg" hoverClass="hover:bg-[#181717]" />
+        <SocialNetwork link="https://linkedin.com/in/mathis-barre" iconUrl="/images/icons/linkedin.svg" hoverClass="hover:bg-[#0A66C2]" />
+        <SocialNetwork link="https://www.youtube.com/channel/UCl3-1zqMl6YkRx0OQ3KwC_g" iconUrl="/images/icons/youtube.svg" hoverClass="hover:bg-[#FF0000]" />
+        <SocialNetwork link="https://twitter.com/LeMathisBarre" iconUrl="/images/icons/twitter.svg" hoverClass="hover:bg-[#1DA1F2]" />
+        <SocialNetwork link="https://www.twitch.tv/mathisbarre_" iconUrl="/images/icons/twitch.svg" hoverClass="hover:bg-[#9146FF]" />
+        <SocialNetwork link="https://www.malt.fr/profile/mathisbarre" iconUrl="/images/icons/malt.svg" hoverClass="hover:bg-[#ff5c57]" />
       </div>
     </section>
   )
@@ -111,13 +117,13 @@ function SocialNetworks() {
 interface SocialNetworkProps {
   link: string
   iconUrl: string
-  color: string
+  hoverClass: string
 }
 
-function SocialNetwork({ link, iconUrl, color }: SocialNetworkProps) {
+function SocialNetwork({ link, iconUrl, hoverClass }: SocialNetworkProps) {
   return (
     <a href={link}>
-      <div className={`duration-75 flex items-center justify-center h-16 border border-gray-600 rounded cursor-pointer hover:bg-gray-800 hover:bg-[${color}] hover:border-none`}><Image width="24" height="24" src={iconUrl} /></div>
+      <div className={`duration-75 flex items-center justify-center h-16 border border-gray-600 rounded cursor-pointer ${hoverClass} hover:border-none`}><Image width="24" height="24" src={iconUrl} /></div>
     </a>
   )
 }
@@ -126,21 +132,16 @@ function Contact() {
   return (
     <section>
       <h2 className="flex flex-col flex-wrap items-start md:items-center md:flex-row title-section">
-        <span>Engage in a discussion</span>
+        <span>Let's talk !</span>
         <span className="block w-4 h-2"></span>
-        <span className="relative inline-flex items-center p-1 text-sm font-normal text-green-400 border border-green-400 rounded">
-          <span className="inline-block w-2 h-2 ml-1 mr-2 bg-green-400 rounded-full animate-ping"></span>
-          <span className="absolute inline-block w-2 h-2 ml-1 mr-2 bg-green-400 rounded-full"></span>
-          Available for hire in <span className="ml-1 font-bold"> September 2021</span>
-        </span>
       </h2>
       <form action="https://formspree.io/f/xeqvzpnz" method="POST">
         <div className="flex flex-col mb-2">
-          <label htmlFor="_replyto" className="font-bold">Your email</label>
+          <label htmlFor="_replyto" className="mb-1 font-bold">Your email</label>
           <input type="_replyto" name="_replyto" id="_replyto" className="p-2 text-gray-900 rounded" />
         </div>
         <div className="flex flex-col mb-4">
-          <label htmlFor="message" className="font-bold">Your message</label>
+          <label htmlFor="message" className="mb-1 font-bold">Your message</label>
           <textarea name="message" id="message" className="p-2 text-gray-900 rounded" rows={6}></textarea>
         </div>
         <input type="submit" value="Send your love letter" className="block w-full p-2 bg-pink-700 rounded cursor-pointer hover:bg-pink-800" />
