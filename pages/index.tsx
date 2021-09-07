@@ -55,9 +55,9 @@ function Projects() {
   return (
     <section>
       <h2 className="title-section">The three projects I'm the most proud of.</h2>
-      <Project link="https://devs.coffee" text="☕ devs.coffee" description="A website that aim to support students in web development until they find a job." />
-      <Project link="https://arnodva.com" text="🤖 Arnodva" description="I migrated Wix website to a Next.js website with built-in internationnalization." />
-      <Project link="https://orinoco-v2.mathisbarre.com" text="🛒 Orinoco" description="The MVP of an e-commerce website (school project)." />
+      <Project link="https://github.com/MathisBarre/MathisBarre_7_01082021_front-end" text="🌐 Groupomania" description='Full-stack last school project. MVP of a social network.' />
+      <Project link="https://github.com/MathisBarre/TapAndGo" text="🚲 TapAndGo" description="Web appplication to find bike stations and more." />
+      <Project link="https://devs.coffee" text="☕ devs.coffee" description="A website that aim to support students in web development in their learning path." />
     </section>
   )
 }
@@ -98,7 +98,7 @@ function Technologies() {
 
 function SocialNetworks() {
   return (
-    <section>
+    <section className="mt-8">
       <h2 className="title-section">Join me !</h2>
 
       <div className="grid grid-cols-3 gap-2 sm:grid-cols-6">
@@ -108,6 +108,10 @@ function SocialNetworks() {
         <SocialNetwork link="https://twitter.com/LeMathisBarre" iconUrl="/images/icons/twitter.svg" hoverClass="hover:bg-[#1DA1F2]" />
         <SocialNetwork link="https://www.twitch.tv/mathisbarre_" iconUrl="/images/icons/twitch.svg" hoverClass="hover:bg-[#9146FF]" />
         <SocialNetwork link="https://www.malt.fr/profile/mathisbarre" iconUrl="/images/icons/malt.svg" hoverClass="hover:bg-[#ff5c57]" />
+      </div>
+
+      <div className="flex items-center justify-center h-16 mt-2 border border-gray-600 rounded">
+        contact@mathisbarre.com
       </div>
     </section>
   )
@@ -132,8 +136,8 @@ function Contact() {
     <section>
       <h2 className="flex flex-col flex-wrap items-start md:items-center md:flex-row title-section">
         <span>Let's talk !</span>
-        <span className="block w-4 h-2"></span>
       </h2>
+
       <form action="https://formspree.io/f/xeqvzpnz" method="POST">
         <div className="flex flex-col mb-2">
           <label htmlFor="_replyto" className="mb-1 font-bold">Your email</label>
