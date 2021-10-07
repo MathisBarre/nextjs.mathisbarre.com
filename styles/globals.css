@@ -22,7 +22,7 @@
 
 html,
 body {
-  font-family: Inter, sans-serif;
+  font-family: "Sora", sans-serif;
   @apply text-white bg-gray-900;
 }
 
