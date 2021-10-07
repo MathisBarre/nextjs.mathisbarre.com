@@ -14,9 +14,6 @@ module.exports = {
         "primary-700": "#040031",
         "primary-800": "#070519",
       },
-      backgroundImage: (theme) => ({
-        hero: "url('/images/john-towner-JgOeRuGD_Y4-unsplash.jpg')",
-      }),
     },
   },
   variants: {
