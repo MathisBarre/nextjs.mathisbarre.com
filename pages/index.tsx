@@ -34,7 +34,7 @@ function Intro() {
   return (
     <section>
       <div className="relative flex items-center justify-center py-16 overflow-hidden rounded">
-        <Image src={bannerImg} layout="fill" objectFit="cover" className="z-0" />
+        <Image src={bannerImg} layout="fill" objectFit="cover" className="z-0" alt="" />
         <h1 className="z-10 flex flex-col text-center">
           <span className="text-2xl font-bold sm:text-4xl">Mathis Barré</span>
           <span className="text-sm sm:text-base opacity-80">React and React Native developer</span>
@@ -100,12 +100,12 @@ function SocialNetworks() {
       <h2 className="title-section">Join me !</h2>
 
       <div className="grid grid-cols-3 gap-2 sm:grid-cols-6">
-        <SocialNetwork link="https://github.com/MathisBarre" iconUrl="/images/icons/github.svg" hoverClass="hover:bg-[#181717]" />
-        <SocialNetwork link="https://linkedin.com/in/mathis-barre" iconUrl="/images/icons/linkedin.svg" hoverClass="hover:bg-[#0A66C2]" />
-        <SocialNetwork link="https://www.youtube.com/channel/UCl3-1zqMl6YkRx0OQ3KwC_g" iconUrl="/images/icons/youtube.svg" hoverClass="hover:bg-[#FF0000]" />
-        <SocialNetwork link="https://twitter.com/LeMathisBarre" iconUrl="/images/icons/twitter.svg" hoverClass="hover:bg-[#1DA1F2]" />
-        <SocialNetwork link="https://www.twitch.tv/mathisbarre_" iconUrl="/images/icons/twitch.svg" hoverClass="hover:bg-[#9146FF]" />
-        <SocialNetwork link="https://www.malt.fr/profile/mathisbarre" iconUrl="/images/icons/malt.svg" hoverClass="hover:bg-[#ff5c57]" />
+        <SocialNetwork link="https://github.com/MathisBarre" iconUrl="/images/icons/github.svg" hoverClass="hover:bg-[#181717]" alt="GitHub" />
+        <SocialNetwork link="https://linkedin.com/in/mathis-barre" iconUrl="/images/icons/linkedin.svg" hoverClass="hover:bg-[#0A66C2]" alt="LinkedIn" />
+        <SocialNetwork link="https://www.youtube.com/channel/UCl3-1zqMl6YkRx0OQ3KwC_g" iconUrl="/images/icons/youtube.svg" hoverClass="hover:bg-[#FF0000]" alt="YouTube" />
+        <SocialNetwork link="https://twitter.com/LeMathisBarre" iconUrl="/images/icons/twitter.svg" hoverClass="hover:bg-[#1DA1F2]" alt="Twitter" />
+        <SocialNetwork link="https://www.twitch.tv/mathisbarre_" iconUrl="/images/icons/twitch.svg" hoverClass="hover:bg-[#9146FF]" alt="Twitch" />
+        <SocialNetwork link="https://www.malt.fr/profile/mathisbarre" iconUrl="/images/icons/malt.svg" hoverClass="hover:bg-[#ff5c57]" alt="Malt" />
       </div>
 
       <div className="flex items-center justify-center h-16 mt-2 border border-gray-600 rounded">
@@ -119,12 +119,13 @@ interface SocialNetworkProps {
   link: string
   iconUrl: string
   hoverClass: string
+  alt: string
 }
 
-function SocialNetwork({ link, iconUrl, hoverClass }: SocialNetworkProps) {
+function SocialNetwork({ link, iconUrl, hoverClass, alt }: SocialNetworkProps) {
   return (
     <a href={link}>
-      <div className={`duration-75 flex items-center justify-center h-16 border border-gray-600 rounded cursor-pointer ${hoverClass} hover:border-none`}><Image width="24" height="24" src={iconUrl} /></div>
+      <div className={`duration-75 flex items-center justify-center h-16 border border-gray-600 rounded cursor-pointer ${hoverClass} hover:border-none`}><Image width="24" height="24" src={iconUrl} alt={alt} /></div>
     </a>
   )
 }
@@ -145,7 +146,7 @@ function Contact() {
           <label htmlFor="message" className="mb-1 font-bold">Your message</label>
           <textarea name="message" id="message" className="p-2 text-gray-900 rounded" rows={6}></textarea>
         </div>
-        <input type="submit" value="Send your love letter" className="block w-full p-2 rounded cursor-pointer bg-primary-200 hover:bg-primary-500" />
+        <input type="submit" value="Send your love letter" className="block w-full p-2 rounded cursor-pointer text-primary-700 bg-primary-200 hover:bg-primary-500" />
       </form>
     </section>
   )
