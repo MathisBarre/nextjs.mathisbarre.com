@@ -37,7 +37,7 @@ function Intro() {
         <Image src={bannerImg} layout="fill" objectFit="cover" className="z-0" />
         <h1 className="z-10 flex flex-col text-center">
           <span className="text-2xl font-bold sm:text-4xl">Mathis Barré</span>
-          <span className="text-base opacity-80">React and React Native developer</span>
+          <span className="text-sm sm:text-base opacity-80">React and React Native developer</span>
         </h1>
       </div>
 
