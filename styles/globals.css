@@ -6,8 +6,8 @@
   .animated-underline {
     text-decoration: none;
     background: linear-gradient(
-        rgba(236, 72, 153, 25%),
-        rgba(236, 72, 153, 25%)
+        rgba(73, 141, 236, 25%),
+        rgba(73, 141, 236, 25%)
       )
       bottom no-repeat;
     background-size: auto;
@@ -23,7 +23,7 @@
 html,
 body {
   font-family: "Sora", sans-serif;
-  @apply text-white bg-gray-900;
+  @apply text-white bg-primary-800;
 }
 
 a {
@@ -36,7 +36,7 @@ a {
 }
 
 *::selection {
-  @apply text-white bg-[#ec4899];
+  @apply text-white bg-primary-200;
 }
 
 .hand-animation {
@@ -52,11 +52,11 @@ a {
 }
 
 .link {
-  @apply text-pink-500 animated-underline;
+  @apply text-primary-200 animated-underline;
 }
 
 .bold {
-  @apply font-bold text-pink-500;
+  @apply font-bold text-primary-200;
 }
 
 @keyframes handAnimation {

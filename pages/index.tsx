@@ -1,5 +1,6 @@
 import Head from "next/head"
 import Image from "next/image"
+import bannerImg from "../public/images/banner.png"
 
 export default function Home() {
   return (
@@ -7,7 +8,7 @@ export default function Home() {
       <Head>
         {/* METADATA */}
         <title>Mathis Barré, web developer</title>
-        <meta name="description" content="French guy who mainly does front-end web development." />
+        <meta name="description" content="Personnal website of Mathis Barré, React and React Native developer." />
 
         {/* FAVICON */}
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -32,20 +33,17 @@ export default function Home() {
 function Intro() {
   return (
     <section>
-      <h1 className="text-2xl font-bold sm:text-4xl">
-        Hey, I'm Mathis Barré <img className="align-baseline h-7 sm:h-9 hand-animation" src="/images/emoji/waving-hand-flip.png" alt="" />
-      </h1>
-      <p className="mb-2 text-gray-200">I'm glad to see you here ! Take a cup of coffee ☕ and make a tour !</p>
-
-      <section className="relative inline-flex items-center p-1 text-sm font-normal text-green-400 border border-green-400 rounded">
-        <span className="inline-block w-2 h-2 ml-1 mr-2 bg-green-400 rounded-full animate-ping"></span>
-        <span className="absolute inline-block w-2 h-2 ml-1 mr-2 bg-green-400 rounded-full"></span>
-        Available for hire in <span className="ml-1 font-bold"> September 2021</span>
-      </section>
+      <div className="relative flex items-center justify-center py-16 overflow-hidden rounded">
+        <Image src={bannerImg} layout="fill" objectFit="cover" className="z-0" />
+        <h1 className="z-10 flex flex-col text-center">
+          <span className="text-2xl font-bold sm:text-4xl">Mathis Barré</span>
+          <span className="text-base opacity-80">React and React Native developer</span>
+        </h1>
+      </div>
 
       <h2 className="title-section">Who am I ?</h2>
       <p className="text-gray-200">
-        I am a french guy who mainly does front-end web development. I also occasionally try to teach what I know by making videos on my <a className="link" href="https://www.youtube.com/channel/UCl3-1zqMl6YkRx0OQ3KwC_g">YouTube channel</a>. On the side, I'm currently trying to grow <a className="link" href="https://devs.coffee">devs.coffee</a> where I write some blog posts.
+        I am a french guy who mainly does front-end web development. I also occasionally try to teach what I know by making videos on my <a className="link" href="https://www.youtube.com/channel/UCl3-1zqMl6YkRx0OQ3KwC_g">YouTube channel</a>. On the side, I'm currently trying to grow <a className="link" href="https://devs.coffee">devs.coffee</a>.
       </p>
     </section>
   )
@@ -90,7 +88,7 @@ function Technologies() {
         On the back-end development side, I know <span className="bold">Express.js</span> but I prefer <span className="bold">Fastify</span> with <span className="bold">Prisma ORM</span> and <span className="bold">MySQL</span>. I do know basic usage of SQL and NoSQL database.
       </p>
       <p className="text-gray-200">
-        I don't do mobile development for now but I plan to learn <span className="bold">React Native</span>, <span className="bold">Flutter</span> or <span className="bold">Ionic</span> with <span className="bold">Capacitor</span>.
+        I am also doing mobile development with <span className="bold">React Native</span>.
       </p>
     </section>
   )
@@ -147,7 +145,7 @@ function Contact() {
           <label htmlFor="message" className="mb-1 font-bold">Your message</label>
           <textarea name="message" id="message" className="p-2 text-gray-900 rounded" rows={6}></textarea>
         </div>
-        <input type="submit" value="Send your love letter" className="block w-full p-2 bg-pink-700 rounded cursor-pointer hover:bg-pink-800" />
+        <input type="submit" value="Send your love letter" className="block w-full p-2 rounded cursor-pointer bg-primary-200 hover:bg-primary-500" />
       </form>
     </section>
   )

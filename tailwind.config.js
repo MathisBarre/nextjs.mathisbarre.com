@@ -9,9 +9,10 @@ module.exports = {
         144: "36rem",
       },
       colors: {
-        "primary-100": "#f50057",
-        "primary-200": "#cc1355",
-        "primary-800": "#581a28",
+        "primary-200": "#498DEC",
+        "primary-500": "#3260A0",
+        "primary-700": "#040031",
+        "primary-800": "#070519",
       },
       backgroundImage: (theme) => ({
         hero: "url('/images/john-towner-JgOeRuGD_Y4-unsplash.jpg')",
