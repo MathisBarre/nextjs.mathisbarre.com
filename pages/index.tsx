@@ -19,7 +19,7 @@ export default function Home() {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
-      <main className="container max-w-3xl px-4 py-16 mx-auto sm:px-6">
+      <main className="container max-w-3xl px-4 pt-4 pb-16 mx-auto sm:pt-16 sm:px-6">
         <Intro />
         <Projects />
         <Technologies />
