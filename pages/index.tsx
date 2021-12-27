@@ -43,7 +43,7 @@ function Intro() {
 
       <h2 className="title-section">Who am I ?</h2>
       <p className="text-gray-200">
-        I am a french guy who mainly does front-end web development. I also occasionally try to teach what I know by making videos on my <a className="link" href="https://www.youtube.com/channel/UCl3-1zqMl6YkRx0OQ3KwC_g">YouTube channel</a>. On the side, I'm currently trying to grow <a className="link" href="https://devs.coffee">devs.coffee</a>.
+        I am a french guy who mainly does front-end web development. I also occasionally try to teach what I know by making videos on my <a className="link" href="https://www.youtube.com/channel/UCl3-1zqMl6YkRx0OQ3KwC_g">YouTube channel</a>.
       </p>
     </section>
   )
