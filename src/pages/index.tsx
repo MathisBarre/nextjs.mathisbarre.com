@@ -1,6 +1,6 @@
 import Head from "next/head"
 import Image from "next/image"
-import bannerImg from "../public/images/banner.png"
+import bannerImg from "../../public/images/banner.png"
 
 export default function Home() {
   return (
