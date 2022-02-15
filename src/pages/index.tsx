@@ -1,5 +1,6 @@
 import Head from "next/head"
 import Image from "next/image"
+import Link from "next/link"
 import bannerImg from "../../public/images/banner.png"
 
 export default function Home() {
@@ -53,7 +54,7 @@ function Projects() {
   return (
     <section>
       <h2 className="title-section">The three projects I'm the most proud of.</h2>
-      <Project link="https://github.com/MathisBarre/MathisBarre_7_01082021_front-end" text="🌐 Groupomania" description='Full-stack last school project. MVP of a social network.' />
+      <Project link="/projets/groupomania" text="🌐 Groupomania" description='Full-stack last school project. MVP of a social network.' />
       <Project link="https://github.com/MathisBarre/TapAndGo" text="🚲 TapAndGo" description="Web appplication to find bike stations and more." />
       <Project link="https://devs.coffee" text="☕ devs.coffee" description="A website that aim to support students in web development in their learning path." />
     </section>
@@ -68,12 +69,14 @@ interface ProjectProps {
 
 function Project({ link, text, description }: ProjectProps) {
   return (
-    <a href={link} target="_blank" rel="noreferrer noopener" className="block mb-2 group">
-      <section className="p-4 duration-75 border border-gray-700 rounded group-hover:bg-gray-800">
-        <h3 className="mb-2 text-lg font-semibold sm:text-xl">{text}</h3>
-        <p>{description}</p>
-      </section>
-    </a>
+    <Link href={link}>
+      <a className="block mb-2 group">
+        <section className="p-4 duration-75 border border-gray-700 rounded group-hover:bg-gray-800">
+          <h3 className="mb-2 text-lg font-semibold sm:text-xl">{text}</h3>
+          <p>{description}</p>
+        </section>
+      </a>
+    </Link>
   )
 }
 
