@@ -194,7 +194,7 @@ export default function Groupomania() {
             html,
             .container {
               margin: 0;
-              padding: 0;
+              padding: 0 1rem;
             }
             @media only screen {
               .container {
