@@ -38,7 +38,6 @@ export default function Groupomania() {
           content="Groupomania le projet 7 de la formation développeur web chez Openclassrooms. Le projet consiste en la réalisation du MVP d’un réseau social interne pour l’entreprise fictive “groupomania”."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://metatags.io/" />
         <meta
           property="og:title"
           content="Groupomania, projet 7 Openclassrooms réalisé par Mathis Barré"
@@ -47,12 +46,7 @@ export default function Groupomania() {
           property="og:description"
           content="Groupomania le projet 7 de la formation développeur web chez Openclassrooms. Le projet consiste en la réalisation du MVP d’un réseau social interne pour l’entreprise fictive “groupomania”."
         />
-        <meta
-          property="og:image"
-          content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"
-        />
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://metatags.io/" />
+
         <meta
           property="twitter:title"
           content="Groupomania, projet 7 Openclassrooms réalisé par Mathis Barré"
@@ -61,10 +55,7 @@ export default function Groupomania() {
           property="twitter:description"
           content="Groupomania le projet 7 de la formation développeur web chez Openclassrooms. Le projet consiste en la réalisation du MVP d’un réseau social interne pour l’entreprise fictive “groupomania”."
         />
-        <meta
-          property="twitter:image"
-          content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"
-        />
+
       </Head>
       <div className="container">
         <Link href="/">
