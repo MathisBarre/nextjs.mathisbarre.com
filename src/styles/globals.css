@@ -18,6 +18,10 @@
   .animated-underline:hover {
     background-size: 100% 100%;
   }
+
+  .dateFragment {
+    @apply bg-white bg-opacity-10 py-1 rounded-sm inline-block text-center
+  }
 }
 
 html,
