@@ -44,7 +44,7 @@ function Intro() {
       </div>
 
       <h2 className="title-section">Qui suis-je ?</h2>
-      <p className="text-gray-200 text-justify break-words">
+      <p className="text-gray-200 ">
         Je suis un jeune développeur web et mobile français qui passe du temps à faire <a className="link" href="https://www.youtube.com/channel/UCl3-1zqMl6YkRx0OQ3KwC_g">du contenu</a> et <a className="link" href="https://devs.coffee">des projets</a> sur mon temps libre ! J'essaie d'être toujours plus compétent dans ce que je fais. J'ai récemment appris le développement mobile, et je me spécialise dans le développement front-end en explorant des notions tels que les tests et l'architecture. Mon prochain objectif est de devenir plus polyvalent en maitrisant aussi le développement back-end.
       </p>
     </section>
@@ -153,7 +153,7 @@ function History() {
         {history.map((event) => {
           const dateArray = parseDate(event.date)
           return (
-            <li className="mb-2">
+            <li key={event.eventName + event.date} className="mb-2">
               <time dateTime={event.date}>
                 <span className="dateFragment w-8 mr-1">{dateArray[0]}</span> <span className="dateFragment w-8 mr-1">{dateArray[1]}</span> <span className="dateFragment w-16 mr-2">{dateArray[2]}</span>
               </time>
@@ -170,8 +170,8 @@ function Technologies() {
   return (
     <section>
       <h2 className="title-section">Quels sont les technologies que je maitrise ?</h2>
-      <p className="mb-2 text-gray-200 text-justify break-words">J'adore travailler avec <span className="bold">tailwindcss</span>, <span className="bold">React</span> et <span className="bold">Next.js</span> avec <span className="bold">TypeScript</span> quand je fais du développement front-end. Mais j'ai aussi appris <span className="bold">Vue.js</span> durant mon alternance chez Lion Coach. J'apprends le développement mobile en <span className=" bold">React Native</span> grâce à BeApp, c'est actuellement ce que je fais au quotidien.</p>
-      <p className="mb-2 text-gray-200 text-justify break-words">
+      <p className="mb-2 text-gray-200 ">J'adore travailler avec <span className="bold">tailwindcss</span>, <span className="bold">React</span> et <span className="bold">Next.js</span> avec <span className="bold">TypeScript</span> quand je fais du développement front-end. Mais j'ai aussi appris <span className="bold">Vue.js</span> durant mon alternance chez Lion Coach. J'apprends le développement mobile en <span className=" bold">React Native</span> grâce à BeApp, c'est actuellement ce que je fais au quotidien.</p>
+      <p className="mb-2 text-gray-200 ">
         Durant mon année d'alternance, j'ai appris les rudiments du back-end. Je connais <span className="bold">express.js</span> mais je préfère <span className="bold">fastify</span> avec <span className="bold">Prisma ORM</span>. J'ai pour objectif moyen terme d'approfondir mes connaissances en back-end <span className="bold">Node.js</span> mais aussi en <span className="bold">PHP</span> avec <span className="bold">Symphony</span>.
       </p>
     </section >
