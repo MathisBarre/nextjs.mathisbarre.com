@@ -157,7 +157,7 @@ function History() {
     return date.split("-").reverse()
   }
 
-  function getYearColor(year: string) {
+  function getYearColor(year: keyof typeof color) {
 
     const color = {
       "2022": "bg-blue-900",
@@ -171,6 +171,8 @@ function History() {
     return color[year]
   }
 
+  type foo = "2022" | "2021" | "2020" | "2019" | "2018" | "2017" | "2016"
+
   return (
     <section>
       <h2 className="title-section">Mon parcours</h2>
@@ -182,7 +184,7 @@ function History() {
           return (
             <li key={event.eventName + event.date} className="mb-2">
               <time dateTime={event.date}>
-                <span className={`dateFragment w-8 mr-1 bg-opacity-50 ${getYearColor(dateArray[2])}`}>{dateArray[1]}</span> <span className={`dateFragment w-16 mr-2 bg-opacity-50 ${getYearColor(dateArray[2])}`}>{dateArray[2]}</span>
+                <span className={`dateFragment w-8 mr-1 bg-opacity-50 ${getYearColor(dateArray[2] as foo)}`}>{dateArray[1]}</span> <span className={`dateFragment w-16 mr-2 bg-opacity-50 ${getYearColor(dateArray[2] as foo)}`}>{dateArray[2]}</span>
               </time>
               <span>{event.eventName}</span>
             </li>
