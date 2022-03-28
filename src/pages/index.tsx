@@ -56,7 +56,7 @@ function Projects() {
     <section>
       <h2 className="title-section">Un petit aperçu de mes connaissances.</h2>
       <Project link="/projets/groupomania" text="🌐 Groupomania" description='Dernier projets du parcours développeur web chez Openclassrooms.' />
-      <Project link="https://github.com/MathisBarre/TapAndGo" text="🚲 TapAndGo" description="Test technique BeApp. Application web de localisation de stations de vélo. Et plus !" />
+      <Project link="https://github.com/MathisBarre/TapAndGo" text="🚲 TapAndGo" description="Test technique Beapp. Application web de localisation de stations de vélo. Et plus !" />
       <Project link="https://devs.coffee" text="☕ devs.coffee" description="Un compagnon pour ta formation de développeur web." />
     </section>
   )
@@ -84,8 +84,20 @@ function Project({ link, text, description }: ProjectProps) {
 function History() {
   const history = [
     {
+      date: "2022-03-31",
+      eventName: '📢 Mon premier talk avec "React Nantes" & Beapp à propos de React Native'
+    },
+    {
+      date: "2022-03-28",
+      eventName: '🎓 Apprentissage de Symfony avec Beapp'
+    },
+    {
+      date: "2021-21-18",
+      eventName: '📱 Premier projet professionnel avec React Native'
+    },
+    {
       date: "2021-10-18",
-      eventName: '📱 Début du CDI en tant que développeur web et mobile chez BeApp'
+      eventName: '📱 Début du CDI en tant que développeur web et mobile chez Beapp'
     },
     {
       date: "2021-08-20",
@@ -145,6 +157,20 @@ function History() {
     return date.split("-").reverse()
   }
 
+  function getYearColor(year: string) {
+
+    const color = {
+      "2022": "bg-blue-900",
+      "2021": "bg-blue-700",
+      "2020": "bg-blue-500",
+      "2019": "bg-blue-300",
+      "2018": "bg-blue-100",
+      "2017": "bg-blue-100",
+      "2016": "bg-blue-100",
+    }
+    return color[year]
+  }
+
   return (
     <section>
       <h2 className="title-section">Mon parcours</h2>
@@ -152,27 +178,6 @@ function History() {
       <ul>
         {history.map((event) => {
           const dateArray = parseDate(event.date)
-
-          function getYearColor(year: string): string {
-            let color
-
-            switch (year) {
-              case "2021":
-                color = "bg-blue-900"
-                break;
-              case "2020":
-                color = "bg-blue-700"
-                break;
-              case "2019":
-                color = "bg-blue-500"
-                break;
-              default:
-                color = "bg-blue-300"
-                break;
-            }
-
-            return color
-          }
 
           return (
             <li key={event.eventName + event.date} className="mb-2">
@@ -192,7 +197,7 @@ function Technologies() {
   return (
     <section>
       <h2 className="title-section">Quels sont les technologies que je maitrise ?</h2>
-      <p className="mb-2 text-gray-200 ">J'adore travailler avec <span className="bold">tailwindcss</span>, <span className="bold">React</span> et <span className="bold">Next.js</span> avec <span className="bold">TypeScript</span> quand je fais du développement front-end. Mais j'ai aussi appris <span className="bold">Vue.js</span> durant mon alternance chez Lion Coach. J'apprends le développement mobile en <span className=" bold">React Native</span> grâce à BeApp, c'est actuellement ce que je fais au quotidien.</p>
+      <p className="mb-2 text-gray-200 ">J'adore travailler avec <span className="bold">tailwindcss</span>, <span className="bold">React</span> et <span className="bold">Next.js</span> avec <span className="bold">TypeScript</span> quand je fais du développement front-end. Mais j'ai aussi appris <span className="bold">Vue.js</span> durant mon alternance chez Lion Coach. J'apprends le développement mobile en <span className=" bold">React Native</span> grâce à Beapp, c'est actuellement ce que je fais au quotidien.</p>
       <p className="mb-2 text-gray-200 ">
         Durant mon année d'alternance, j'ai appris les rudiments du back-end. Je connais <span className="bold">express.js</span> mais je préfère <span className="bold">fastify</span> avec <span className="bold">Prisma ORM</span>. J'ai pour objectif moyen terme d'approfondir mes connaissances en back-end <span className="bold">Node.js</span> mais aussi en <span className="bold">PHP</span> avec <span className="bold">Symphony</span>.
       </p>
