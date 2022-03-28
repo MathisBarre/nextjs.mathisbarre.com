@@ -152,10 +152,32 @@ function History() {
       <ul>
         {history.map((event) => {
           const dateArray = parseDate(event.date)
+
+          function getYearColor(year: string): string {
+            let color
+
+            switch (year) {
+              case "2021":
+                color = "bg-blue-900"
+                break;
+              case "2020":
+                color = "bg-blue-700"
+                break;
+              case "2019":
+                color = "bg-blue-500"
+                break;
+              default:
+                color = "bg-blue-300"
+                break;
+            }
+
+            return color
+          }
+
           return (
             <li key={event.eventName + event.date} className="mb-2">
               <time dateTime={event.date}>
-                <span className="dateFragment w-8 mr-1">{dateArray[0]}</span> <span className="dateFragment w-8 mr-1">{dateArray[1]}</span> <span className="dateFragment w-16 mr-2">{dateArray[2]}</span>
+                <span className={`dateFragment w-8 mr-1 bg-opacity-50 ${getYearColor(dateArray[2])}`}>{dateArray[1]}</span> <span className={`dateFragment w-16 mr-2 bg-opacity-50 ${getYearColor(dateArray[2])}`}>{dateArray[2]}</span>
               </time>
               <span>{event.eventName}</span>
             </li>
