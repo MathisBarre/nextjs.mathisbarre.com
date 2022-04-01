@@ -4,7 +4,7 @@ export default function Projects() {
   return (
     <section>
       <h2 className="title-section">Un petit aperçu de mes connaissances.</h2>
-      <Project link="/projets/groupomania" text="🌐 Groupomania" description='Dernier projets du parcours développeur web chez Openclassrooms.' />
+      <Project link="/projets/groupomania" text="🌐 Groupomania" description='Dernier projet du parcours développeur web chez Openclassrooms.' />
       <Project link="https://github.com/MathisBarre/TapAndGo" text="🚲 TapAndGo" description="Test technique Beapp. Application web de localisation de stations de vélo. Et plus !" />
       <Project link="https://devs.coffee" text="☕ devs.coffee" description="Un compagnon pour ta formation de développeur web." />
     </section>
