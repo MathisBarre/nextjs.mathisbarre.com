@@ -1,6 +1,20 @@
 import eventList from "./eventList.data"
 import EventText from "./EventText"
-import { foo, getYearColor, parseDate } from "./history.utils"
+import { foo, parseDate } from "./history.utils"
+
+export function getYearColor(year: keyof typeof color) {
+  const color = {
+    "2022": "bg-blue-900",
+    "2021": "bg-blue-700",
+    "2020": "bg-blue-500",
+    "2019": "bg-blue-300",
+    "2018": "bg-blue-100",
+    "2017": "bg-blue-100",
+    "2016": "bg-blue-100",
+  };
+
+  return color[year];
+}
 
 export default function History() {
   return (
