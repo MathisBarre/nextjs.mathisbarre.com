@@ -14,7 +14,7 @@ export default function Intro() {
 
       <h2 className="title-section">Qui suis-je ?</h2>
       <p className="text-gray-200 ">
-        Je suis un jeune développeur web et mobile français qui passe du temps à faire <a className="link" href="https://www.youtube.com/channel/UCl3-1zqMl6YkRx0OQ3KwC_g">du contenu</a> et <a className="link" href="https://devs.coffee">des projets</a> sur mon temps libre ! J'ai récemment appris le développement mobile, et je me spécialise dans le développement front-end en explorant les tests, l'architecture et autre. Mon prochain objectif est de devenir plus polyvalent en maitrisant aussi le développement back-end.
+        Je suis un jeune développeur web et mobile français qui passe du temps à faire <a className="link" href="https://www.youtube.com/channel/UCl3-1zqMl6YkRx0OQ3KwC_g">du contenu</a> et <a className="link" href="https://devs.coffee">des projets</a> sur mon temps libre ! J&apos;ai récemment appris le développement mobile, et je me spécialise dans le développement front-end en explorant les tests, l&apos;architecture et autre. Mon prochain objectif est de devenir plus polyvalent en maitrisant aussi le développement back-end.
       </p>
     </section>
   )
