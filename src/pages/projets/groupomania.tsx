@@ -1,7 +1,9 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import Script from "next/script";
 import GroupomaniaBanner from "../../../public/images/groupomania-banner.png";
+import Comments from "../../components/utils/Comments";
 
 export default function Groupomania() {
   return (
@@ -199,6 +201,7 @@ export default function Groupomania() {
             <p id="cd378bd1-a728-44a1-ae2e-dc287c848726" />
           </div>
         </article>
+        <Comments />
       </main>
     </>
   );
