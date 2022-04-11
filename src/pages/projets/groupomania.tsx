@@ -200,8 +200,10 @@ export default function Groupomania() {
             </ul>
             <p id="cd378bd1-a728-44a1-ae2e-dc287c848726" />
           </div>
+          <h2>Commentaires</h2>
         </article>
         <Comments />
+        
       </main>
     </>
   );
