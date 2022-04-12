@@ -66,10 +66,10 @@ export default function Groupomania() {
           height={1080 / 2}
           alt="groupomania illustration banner"
         />
-        <div className="grid grid-cols-3 gap-x-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
           <a
             href="https://groupomania.mathisbarre.com"
-            className="border duration-75 border-gray-700 rounded hover:bg-gray-800 text-center py-2 flex items-center justify-center"
+            className="border duration-75 border-gray-700 rounded hover:bg-gray-800 text-center py-2 flex items-center justify-center sm:col-span-2 md:col-span-1"
             target="_blank" rel="noreferrer"
           >
             <svg
