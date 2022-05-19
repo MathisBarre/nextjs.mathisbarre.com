@@ -21,7 +21,12 @@ const eventList: Event[] = [
   {
     date: "2021-10-18",
     eventName:
-      "📱 Début du CDI en tant que développeur web et mobile chez Beapp",
+      "📱 Début de mon premier CDI en tant que développeur chez Beapp à 19 ans",
+  },
+  {
+    date: "2021-08-23",
+    eventName: "🎥 On m'interview sur mon parcours !",
+    link: "https://youtu.be/H9QXI3Evkx4",
   },
   {
     date: "2021-08-20",
