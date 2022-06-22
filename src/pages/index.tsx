@@ -9,7 +9,7 @@ import Technologies from "../components/pages/Technologies/Technologies"
 import { ProjectSummary } from "../types/ProjectSummary"
 
 interface HomeProps {
-  projectsSummary: ProjectSummary
+  projectsSummary: ProjectSummary[]
 }
 
 export default function Home({projectsSummary}: HomeProps) {
@@ -32,7 +32,7 @@ export default function Home({projectsSummary}: HomeProps) {
       </Head>
       <main className="container max-w-3xl px-4 pt-4 pb-16 mx-auto sm:pt-16 sm:px-6">
         <Intro />
-        <Projects />
+        <Projects projectsSummary={projectsSummary} />
         <History />
         <Technologies />
         <SocialNetworks />
