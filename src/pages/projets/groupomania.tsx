@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import Script from "next/script";
 import GroupomaniaBanner from "../../../public/images/groupomania-banner.png";
 import Comments from "../../components/utils/Comments";
 
@@ -108,20 +107,20 @@ export default function Groupomania() {
             <h1 className="page-title">Groupomania</h1>
           </header>
           <div className="page-body">
-            <p id="5377fde7-9702-4ba5-aeb9-79731ed953d9">
+            <p>
               Groupomania le projet 7 de la formation développeur web chez
               Openclassrooms. Le projet consiste en la réalisation du MVP d’un
               réseau social interne pour l’entreprise fictive “groupomania”.
             </p>
-            <h2 id="8e18f1e7-85c6-47e5-b8fa-aebe866e4b84">Choix techniques</h2>
-            <p id="be9952dc-f73b-49f9-9842-155305f8d063">
+            <h2>Choix techniques</h2>
+            <p>
               Le choix des technologies est laissé libre tant qu’un framework
               front-end est utilisé et que tout est fait en Javascript (front
               comme back). L’utilisation d’une base de données non relationnelle
               était interdite.
             </p>
-            <h3 id="aae889b6-1a5c-446b-8571-ca9699b387d4">Choix front-end</h3>
-            <p id="81c574d4-33e5-4b77-a828-0109fd4afeba">
+            <h3>Choix front-end</h3>
+            <p>
               Côté front-end, j’ai personnellement décidé de partir sur la
               librairie React.js avec le meta-framework Next.js. On peut aussi
               noter l’utilisation de tailwindcss, headless UI et heroicons pour
@@ -129,8 +128,8 @@ export default function Groupomania() {
               cache ainsi que days.js pour le traitement des dates. eslint est
               utilisé pour garantir une qualité de code optimale.
             </p>
-            <h3 id="bbc916ea-9dfb-4595-8a44-192ca230c958">Choix back-end</h3>
-            <p id="c5ab543c-b9c9-4247-8959-d48d3a0fe492">
+            <h3>Choix back-end</h3>
+            <p>
               Pour le back-end, j’ai utilisé fastify (alternative à express.js,
               voir {""}
               <a href="https://dev.to/romainlanz/why-you-should-drop-expressjs-in-2021-711">
@@ -138,22 +137,22 @@ export default function Groupomania() {
               </a>
               ) avec Prisma ORM.
             </p>
-            <p id="05238d80-4ba4-4836-a047-81725e9f158b">
+            <p>
               Swagger est utilisé pour la documentation automatiquement générée
               ainsi qu’eslint pour la qualité du code.
             </p>
-            <h2 id="875a8079-a5d2-4ac8-9281-aa13de682ed3">Fonctionnalités</h2>
-            <p id="490f8610-51f0-4a94-8bd8-f2c0ec2e5e6e">
+            <h2>Fonctionnalités</h2>
+            <p>
               Les fonctionnalités principales sont les suivantes :
             </p>
             <ul
-              id="c3f1ed44-1194-47e9-98a1-f55abcf1442a"
+             
               className="bulleted-list"
             >
               <li style={{ listStyleType: "disc" }}>
                 Authentification
                 <ul
-                  id="13af1b30-758e-4b84-b6c0-ddd71b1ab168"
+                 
                   className="bulleted-list"
                 >
                   <li style={{ listStyleType: "circle" }}>
@@ -161,7 +160,7 @@ export default function Groupomania() {
                   </li>
                 </ul>
                 <ul
-                  id="71aa8045-9d39-4d38-8153-1172cb9a5970"
+                 
                   className="bulleted-list"
                 >
                   <li style={{ listStyleType: "circle" }}>
@@ -172,7 +171,7 @@ export default function Groupomania() {
               </li>
             </ul>
             <ul
-              id="c02bb542-de71-449d-8985-20b1de0bfc7d"
+             
               className="bulleted-list"
             >
               <li style={{ listStyleType: "disc" }}>
@@ -181,7 +180,7 @@ export default function Groupomania() {
               </li>
             </ul>
             <ul
-              id="a69e276e-4877-4073-a623-f9f02ec584df"
+             
               className="bulleted-list"
             >
               <li style={{ listStyleType: "disc" }}>
@@ -190,7 +189,7 @@ export default function Groupomania() {
               </li>
             </ul>
             <ul
-              id="cbb3efcc-2f7d-4a5e-ad6f-ce0e932b38ff"
+             
               className="bulleted-list"
             >
               <li style={{ listStyleType: "disc" }}>
@@ -198,7 +197,7 @@ export default function Groupomania() {
                 publications.
               </li>
             </ul>
-            <p id="cd378bd1-a728-44a1-ae2e-dc287c848726" />
+            <p />
           </div>
           <h2>Commentaires</h2>
         </article>
