@@ -1,12 +1,19 @@
 import Head from "next/head"
+import { getProjectsSummary } from "../api/projects/getProjectsSummary"
 import Contact from "../components/pages/Contact/Contact"
 import History from "../components/pages/History/History"
 import Intro from "../components/pages/Intro/Intro"
 import Projects from "../components/pages/Projects/Projects"
 import SocialNetworks from "../components/pages/SocialNetworks/SocialNetworks"
 import Technologies from "../components/pages/Technologies/Technologies"
+import { ProjectSummary } from "../types/ProjectSummary"
 
-export default function Home() {
+interface HomeProps {
+  projectsSummary: ProjectSummary
+}
+
+export default function Home({projectsSummary}: HomeProps) {
+  console.log(projectsSummary)
   return (
     <>
       <Head>
@@ -33,4 +40,14 @@ export default function Home() {
       </main>
     </>
   )
+}
+
+export async function getStaticProps() {
+  const projectsSummary = await getProjectsSummary()
+  
+  return {
+    props: {
+      projectsSummary,
+    },
+  }
 }
