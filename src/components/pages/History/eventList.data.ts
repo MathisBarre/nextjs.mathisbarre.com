@@ -11,10 +11,6 @@ const eventList: Event[] = [
     link: "https://www.linkedin.com/feed/update/urn:li:activity:6915626007525769216/",
   },
   {
-    date: "2022-03-28",
-    eventName: "🎓 Apprentissage de Symfony avec Beapp",
-  },
-  {
     date: "2021-21-18",
     eventName: "📱 Premier projet professionnel avec React Native",
   },
