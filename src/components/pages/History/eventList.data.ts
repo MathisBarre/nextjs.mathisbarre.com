@@ -6,6 +6,10 @@ interface Event {
 
 const eventList: Event[] = [
   {
+    date: "2022-10-07",
+    eventName: "🧑‍🏫 Je donne des cours React (Native) à des Master 1 & 2 à l'ecv de Nantes",
+  },
+  {
     date: "2022-03-31",
     eventName: '📢 Mon premier talk avec "React Nantes" & Beapp',
     link: "https://www.linkedin.com/feed/update/urn:li:activity:6915626007525769216/",
