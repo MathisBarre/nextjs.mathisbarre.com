@@ -15,6 +15,11 @@ const eventList: Event[] = [
     link: "https://www.linkedin.com/feed/update/urn:li:activity:6915626007525769216/",
   },
   {
+    date: "2022-03-14",
+    eventName: "🧑‍🏫 Je fais une intervention auprès de jeunes en insertion professionnel",
+    link: "https://www.linkedin.com/posts/mathis-barre_aujourdhui-c%C3%A9dric-rou%C3%A9dou-ma-donn%C3%A9-lopportunit%C3%A9-activity-6909231827450785792-qiWf",
+  },
+  {
     date: "2021-21-18",
     eventName: "📱 Premier projet professionnel avec React Native",
   },
