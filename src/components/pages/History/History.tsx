@@ -1,10 +1,11 @@
-import eventList from "./eventList.data"
-import EventText from "./EventText"
-import { foo, parseDate } from "./history.utils"
+import eventList from "./eventList.data";
+import EventText from "./EventText";
+import { foo, parseDate } from "./history.utils";
 
 export function getYearColor(year: keyof typeof color) {
   const color = {
-    "2022": "bg-blue-900",
+    "2023": "bg-blue-900",
+    "2022": "bg-blue-800",
     "2021": "bg-blue-700",
     "2020": "bg-blue-500",
     "2019": "bg-blue-300",
@@ -23,18 +24,31 @@ export default function History() {
 
       <ul>
         {eventList.map((event) => {
-          const dateArray = parseDate(event.date)
+          const dateArray = parseDate(event.date);
 
           return (
             <li key={event.eventName + event.date} className="mb-2">
               <time dateTime={event.date}>
-                <span className={`dateFragment w-8 mr-1 bg-opacity-50 ${getYearColor(dateArray[2] as foo)}`}>{dateArray[1]}</span> <span className={`dateFragment w-16 mr-2 bg-opacity-50 ${getYearColor(dateArray[2] as foo)}`}>{dateArray[2]}</span>
+                <span
+                  className={`dateFragment w-8 mr-1 bg-opacity-50 ${getYearColor(
+                    dateArray[2] as foo
+                  )}`}
+                >
+                  {dateArray[1]}
+                </span>{" "}
+                <span
+                  className={`dateFragment w-16 mr-2 bg-opacity-50 ${getYearColor(
+                    dateArray[2] as foo
+                  )}`}
+                >
+                  {dateArray[2]}
+                </span>
               </time>
               <EventText link={event.link}>{event.eventName}</EventText>
             </li>
-          )
+          );
         })}
       </ul>
     </section>
-  )
+  );
 }

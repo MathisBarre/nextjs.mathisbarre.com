@@ -6,8 +6,14 @@ interface Event {
 
 const eventList: Event[] = [
   {
+    date: "2023-02-20",
+    eventName: "🔉 Je rejoins shotgun.live en tant que développeur fullstack !",
+    link: "https://www.linkedin.com/posts/mathis-barre_jai-le-plaisir-de-vous-annoncer-qu%C3%A0-partir-activity-7032005368801067008-7lRl",
+  },
+  {
     date: "2022-10-07",
-    eventName: "🧑‍🏫 Je donne des cours React (Native) à des Master 1 & 2 à l'ecv de Nantes",
+    eventName:
+      "🧑‍🏫 Je donne des cours React (Native) à des Master 1 & 2 à l'ecv de Nantes",
   },
   {
     date: "2022-03-31",
@@ -16,7 +22,8 @@ const eventList: Event[] = [
   },
   {
     date: "2022-03-14",
-    eventName: "🧑‍🏫 Je fais une intervention auprès de jeunes en insertion professionnel",
+    eventName:
+      "🧑‍🏫 Je fais une intervention auprès de jeunes en insertion professionnel",
     link: "https://www.linkedin.com/posts/mathis-barre_aujourdhui-c%C3%A9dric-rou%C3%A9dou-ma-donn%C3%A9-lopportunit%C3%A9-activity-6909231827450785792-qiWf",
   },
   {
