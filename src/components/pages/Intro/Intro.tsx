@@ -23,7 +23,7 @@ export default function Intro() {
       <h2 className="title-section">Qui suis-je ?</h2>
       <p className="text-gray-200 ">
         Je suis un développeur fullstack (mobile/web/back) typescript français
-        passionné par son travail. J&apos;ai commencé à développer en 2016 et je
+        passionné par mon travail. J&apos;ai commencé à développer en 2016 et je
         n&apos;ai pas arrêté depuis. J&apos;ai travaillé sur de nombreux projets
         personnels et professionnels, ce qui m&apos;a permis d&apos;acquérir
         beaucoup d&apos;expériences. Je suis de nature curieuse, j&apos;aime
