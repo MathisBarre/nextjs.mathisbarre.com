@@ -6,6 +6,11 @@ interface Event {
 
 const eventList: Event[] = [
   {
+    date: "2023-09-10",
+    eventName: "🏦 Je rejoins heropay.eu en tant que développeur fullstack !",
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7113462468823105537/",
+  },
+  {
     date: "2023-02-20",
     eventName: "🔉 Je rejoins shotgun.live en tant que développeur fullstack !",
     link: "https://www.linkedin.com/posts/mathis-barre_jai-le-plaisir-de-vous-annoncer-qu%C3%A0-partir-activity-7032005368801067008-7lRl",
