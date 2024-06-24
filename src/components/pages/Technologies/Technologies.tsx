@@ -7,21 +7,32 @@ export default function Technologies() {
       <p className="mb-2 text-gray-200 ">
         J&apos;adore travailler avec <span className="bold">tailwindcss</span>,{" "}
         <span className="bold">React</span> et{" "}
-        <span className="bold">Next.js</span> avec{" "}
-        <span className="bold">TypeScript</span> quand je fais du développement
-        front-end. Mais j&apos;ai aussi appris{" "}
-        <span className="bold">Vue.js</span> durant mon alternance chez Lion
-        Coach. Côté mobile, je maitrise{" "}
-        <span className=" bold">React Native</span> grâce à mon expérience chez
-        Beapp.
+        <span className="bold">Next.js</span> quand je fais du développement
+        front-end. Côté mobile, je maitrise{" "}
+        <span className=" bold">React Native</span>. Et pour les applications de
+        bureau, je m&apos;amuse avec <span className="bold">Tauri</span>.
       </p>
       <p className="mb-2 text-gray-200 ">
-        Durant mon année d&apos;alternance, j&apos;ai appris le back-end. Je
-        connais <span className="bold">Express.js</span> mais je préfère{" "}
-        <span className="bold">Fastify</span> avec{" "}
-        <span className="bold">Prisma ORM</span>. Chez shotgun, j&apos;ai appris
-        <span className="bold"> Apollo GraphQL</span> et{" "}
-        <span className="bold"> PostgreSQL</span>
+        Côté back-end, j&apos;ai une préférence pour{" "}
+        <span className="bold">Node.js</span> avec le plus souvent{" "}
+        <span className="bold">Nest.js</span> et{" "}
+        <span className="bold">PostgresQL</span> pour la base de données. Côté
+        ORM, il faut faire simple. <span className="bold">Drizzle</span> est mon
+        premier choix mais je maitrise aussi{" "}
+        <span className="bold">TypeORM</span>.
+      </p>
+
+      {/* Archi, tests */}
+      <p className="mb-2 text-gray-200 ">
+        Pour l&apos;architecture de mes applications, je m&apos;inspire beaucoup
+        de la <span className="bold">Clean Architecture</span> et de ces
+        variantes mais en restant pragmatique. Tout est une question de
+        compromis.
+      </p>
+      <p>
+        Côté test, j&apos;applique le <span className="bold">test-first</span>{" "}
+        le plus possible. Et je préviligie en règle général les{" "}
+        <span className="bold">tests d&apos;intégrations</span> côté back-end.
       </p>
     </section>
   );
